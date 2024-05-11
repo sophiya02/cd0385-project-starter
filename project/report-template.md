@@ -3,31 +3,32 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+The submission of predictions to kaggle required the prediction for bike sharing only to be a positive value. To ensure the predictions for the bike sharing problem are valid for submission, I had to update all negative predictions to 0.
+
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+The top ranked model was WeightedEnsemble_L3  with a score value of -53.088295.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
-TODO: Add your explanation
+I added additional features by segregating the datetime into year, month and day and having seperate column for that, and then dropped the datetime column.
 
 ### How much better did your model preform after adding additional features and why do you think that is?
-TODO: Add your explanation
+The kaggle Score after adding the new features was: 1.29082
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
-TODO: Add your explanation
+The kaggle score after adding the hyperparameters was: 1.30407
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+By increasing the training time.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
+|model|WeightedEnsemble_L3|ExtraTreesMSE_BAG_L2|WeightedEnsemble_L2|score|
 |--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|initial|default|default|default|1.80590|
+|add_features|default|default|default|1.29082|
+|hpo|-127.27579|-127.812174|-128.324154|1.30407|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
