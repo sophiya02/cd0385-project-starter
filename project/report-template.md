@@ -26,21 +26,21 @@ By increasing the training time.
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|WeightedEnsemble_L3|ExtraTreesMSE_BAG_L2|WeightedEnsemble_L2|score|
 |--|--|--|--|--|
-|initial|default|default|default|1.80590|
-|add_features|default|default|default|1.29082|
-|hpo|-127.27579|-127.812174|-128.324154|1.30407|
+|initial|default|default|default|1.80082|
+|add_features|default|default|default|1.32847|
+|hpo|-53.124542|-53.43894|-55.043909|1.34696|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
 TODO: Replace the image below with your own.
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 TODO: Replace the image below with your own.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](model_test_score.png)
 
 ## Summary
 TODO: Add your explanation
